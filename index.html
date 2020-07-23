@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portsip</title>
+    <link rel="shortcut icon" href="./title_ico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- single user register -->
+      <div id="single-section">
+        <label for="username">Username:</label>
+        <input type="text" id="username" value="101" />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" value="111111" />
+      </div>
+      <div>
+        <label for="domain">Domain:</label>
+        <input type="text" id="domain" value="pbx.sipiw.com" />
+      </div>
+      <div>
+        <label for="server">WS server:</label>
+        <input type="text" id="server" value="wss://pbx.sipiw.com:10443" />
+      </div>
+      <div>
+        <button id="register">Register</button>
+      </div>
+
+      <div id="single-call-section">
+        <div class="videos">
+          <h4>Remote</h4>
+          <video id="remote" playsinline webkit-playsinline></video>
+          <h4>Local</h4>
+          <video id="local" playsinline webkit-playsinline muted></video>
+        </div>
+
+        <div>
+          <label for="target">Target:</label>
+          <input type="text" id="target" />
+        </div>
+        <div>
+          <button id="call">Call</button>
+          <button id="hangup">Hang up</button>
+          <button id="hold">Hold</button>
+          <button id="unhold">Unhold</button>
+        </div>
+        <div>
+          <label for="msg">Message:</label>
+          <input type="text" id="messageText" />
+        </div>
+        <button id="msg">Send</button>
+      </div>
+    </main>
+  </body>
+  <script src="./js/sip-0.17.1.min.js"></script>
+  <script src="./js/index.js"></script>
+</html>
